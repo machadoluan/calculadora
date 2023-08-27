@@ -1,0 +1,167 @@
+/*----------------------------- [ FONTS - Righteous -Lexend ]---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400&family=Righteous&display=swap');
+
+
+/*----------------------------- [ CONFIG PADRÃO ]---------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lexend;
+    font-weight: 300;
+    color: white;
+}
+
+/*----------------------------- [ CONFIG DO BODY ]---------------------------------------*/
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #3f3ce7, #0080af, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 25s ease infinite;
+    -moz-animation: Gradient 25s ease infinite;
+    animation: Gradient 25s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/*------------------------ [ CONTAINER CALCULADORA ] ---------------------------------*/
+
+.container{
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+}
+
+.container #titulo{
+  padding-bottom: 100px;
+}
+
+.container .calculadora{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculadora .inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.calculadora .inputs input{
+  width: 330px;
+  padding: 10px;
+  border-radius: 9px;
+  background: none;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+}
+.calculadora .inputs input:focus{
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 300ms ease-in-out
+}
+::placeholder{
+  color: white;
+  font-weight: 200;
+}
+
+.calculadora .buttons{
+  padding-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.calculadora .buttons button{
+  padding: 10px;
+  background: none;
+  border-radius: 9px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  
+}
+.calculadora .buttons button:hover{
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 300ms ease-in-out
+}
+
+.result{
+  padding-top: 60px;
+}
+.result h1{
+  font-size: 20px;
+}
+.resultado{
+  margin-top: 5px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+.redes{
+  position: relative;
+  top: -40px;
+  display: flex;
+  gap: 15px;
+  
+}
+.redes a{
+  font-size: 20px;
+}

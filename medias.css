@@ -1,0 +1,27 @@
+@media screen and (max-width: 480px){
+    .container{
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+    #titulo{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 350px){
+    #titulo{
+        font-size: 20px;
+    }
+    .calculadora .inputs input{
+        width: 250px;
+    }
+    .redes{
+        top: 0;
+  
+    }
+}
+@media screen and (max-width: 258px){
+    .calculadora .inputs input{
+        width: 200px;
+    }
+}
